@@ -33,13 +33,6 @@ An internal tool I built while running operations for a translation agency. Bill
 | Client B | 5 | 17,902 |
 | **Total** | **17** | **66,212** |
 
-## What I'd improve next
-
-- Move IDs and settings to Script Properties instead of constants
-- Unit tests for the matching logic (clasp + Jest)
-- OCR for scanned PDFs, which currently count as empty
-- A log sheet listing files that failed to convert
-
 ## Working around the execution limit
 
 Apps Script stops a run after 6 minutes, and a full month of files takes longer than that. The script checks the elapsed time, saves its position in `PropertiesService` before the limit, and schedules a time-based trigger to continue from the same place a minute later. Any amount of files gets processed without anyone babysitting the run.
@@ -56,3 +49,11 @@ All IDs in this repository are placeholders. No client data is included.
 ## Stack
 
 Google Apps Script (JavaScript) · Google Drive API · Google Docs/Sheets/Slides services
+
+
+## What I'd improve next
+
+- Move IDs and settings to Script Properties instead of constants
+- Unit tests for the matching logic (clasp + Jest)
+- OCR for scanned PDFs, which currently count as empty
+- A log sheet listing files that failed to convert
