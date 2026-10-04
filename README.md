@@ -42,7 +42,7 @@ Apps Script stops a run after 6 minutes, and a full month of files takes longer 
 1. Create a new Apps Script project and paste `Code.gs`.
 2. Fill in the constants at the top: source folder IDs, the output spreadsheet ID, and the list of excluded phrases.
 3. Enable the Drive advanced service (needed for converting Office files and PDFs).
-4. Run the main function once and grant permissions.
+4. Run initializeClientProcessing() once.
 
 All IDs in this repository are placeholders. No client data is included.
 
